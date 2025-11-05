@@ -11,6 +11,14 @@ int main()
 
     ifstream F("input.txt");
     
+    int x;
+    
+    while (!F.eof())
+    {
+        F >> x;
+        cout << x << endl;    /* code */
+    }
+    
     
 
     return 0;
