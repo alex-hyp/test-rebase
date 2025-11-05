@@ -9,14 +9,17 @@ int main()
 
     cout << endl << "Test" << endl;
 
-    ifstream F("input.txt");
+    ifstream I("input.txt");
+    ofstream O("ouput.txt");
     
     int x;
     
-    while (!F.eof())
+    while (!I.eof())
     {
-        F >> x;
+        I >> x;
         cout << x << endl;    /* code */
+        O << x << "\t"; 
+
     }
     
     
